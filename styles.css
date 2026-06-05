@@ -306,6 +306,24 @@ html, body {
   margin: 0 auto;
 }
 
+.contact-note {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-top: 32px;
+  line-height: 1.6;
+}
+
+.form-link {
+  color: #0066cc;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.form-link:hover {
+  color: #004499;
+}
+
 .contact-container h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
