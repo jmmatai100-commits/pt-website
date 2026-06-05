@@ -3,221 +3,97 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jordan — Personal Training</title>
+    <title>Jordan — Personal Trainer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="topbar">
-      <div class="topbar-inner">
-        <div class="contact-short">
-          <span>Email: <a href="mailto:you@example.com">you@example.com</a></span>
-          <span>Phone: <a href="tel:+11234567890">(123) 456‑7890</a></span>
-        </div>
-        <div class="topbar-cta">
-          <a class="btn" href="#contact">Book Now</a>
-        </div>
-      </div>
-    </div>
-
-    <header class="hero">
-      <div class="hero-inner">
-        <div class="hero-image">
-          <!-- Place your uploaded headshot here as headshot.jpg in the project root -->
-          <img src="headshot.jpg" alt="Jordan headshot" />
-        </div>
-        <div class="hero-copy">
-          <h1>Hey! I’m Jordan.</h1>
-          <blockquote>
-            "Hey! I’m Jordan. I’m a Kansas City, Missouri native and recent BYU graduate in Communications and Business. I have over a decade of weight training and fitness experience. My goal is to help you accomplish your goals. Whether you want to get stronger, feel better, or look better, I’m here for you. Let’s support your active lifestyle!"
-          </blockquote>
-          <div class="hero-cta">
-            <a class="btn" id="bookBtn" href="#contact">Book a Free Consultation</a>
-          </div>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">Jordan</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#philosophy">Philosophy</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="nav-cta">Book a Call</a>
         </div>
       </div>
-    </header>
+    </nav>
 
     <main>
-      <!-- Words from your trainer -->
-      <section id="words" class="words">
-        <h2>Words from your trainer</h2>
-
-        <div class="word-card">
-          <h3>I am here for you</h3>
-          <p>I’m all about making people feel comfortable and safe, especially if the gym is a new environment for you. With that being said, I want people to see and feel results, that in itself doesn’t come easily. I will be your perfect balance of happy headspace and pushing it to the limit.</p>
-        </div>
-
-        <div class="word-card">
-          <h3>Your Physcal well being is everything!</h3>
-          <p>Your body carries you through every part of your life, and taking care of it matters more than most people realize. Movement and training do more than build strength. They reduce stress, improve focus, and boost confidence. When you take care of your body, you support your mind as well! This creates a healthier and more capable version of yourself.</p>
-        </div>
-
-        <div class="word-card">
-          <h3>what I want for you:</h3>
-          <p>Your body carries you through every part of your life, and taking care of it matters more than most people realize. Movement and training do more than build strength. They reduce stress, improve focus, and boost confidence. When you take care of your body, you support your mind as well! This creates a healthier and more capable version of yourself.</p>
+      <!-- Hero Section -->
+      <section id="about" class="hero">
+        <div class="hero-container">
+          <div class="hero-image">
+            <img src="headshot.jpg" alt="Jordan" />
+          </div>
+          <div class="hero-content">
+            <h1>Hey, I'm Jordan</h1>
+            <p class="hero-subtitle">Personal Trainer & Fitness Coach</p>
+            <p class="hero-description">
+              I'm a Kansas City native and BYU graduate with over a decade of training experience. My mission is to help you get stronger, feel better, and build confidence through movement. Whether you're starting fresh or pushing harder—I'm here to support your journey.
+            </p>
+            <a href="#contact" class="btn btn-primary">Start Your Transformation</a>
+          </div>
         </div>
       </section>
 
-      <!-- Additional sections (Services, Testimonials, Contact) go here -->
+      <!-- Philosophy Section -->
+      <section id="philosophy" class="philosophy">
+        <div class="philosophy-container">
+          <h2>My Training Philosophy</h2>
+          <p class="section-subtitle">Three pillars that guide every session</p>
+          
+          <div class="philosophy-grid">
+            <div class="philosophy-card">
+              <div class="philosophy-icon">🤝</div>
+              <h3>I am here for you</h3>
+              <p>I create a safe, welcoming space where you feel comfortable pushing your limits. Whether you're new to the gym or a seasoned lifter, I meet you where you are and push you to be better—with the right balance of encouragement and intensity.</p>
+            </div>
+            
+            <div class="philosophy-card">
+              <div class="philosophy-icon">💪</div>
+              <h3>Your Physical Well-Being is Everything</h3>
+              <p>Your body carries you through life. Training isn't just about looks—it reduces stress, improves focus, and boosts confidence. When you invest in your body, you invest in your mind and quality of life.</p>
+            </div>
+            
+            <div class="philosophy-card">
+              <div class="philosophy-icon">🏃</div>
+              <h3>What I Want for You</h3>
+              <p>A stronger, more capable version of yourself. Results you can see and feel. The confidence that comes from growth. And an active lifestyle that becomes part of who you are.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
       <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-        <p>Phone: <a href="tel:+11234567890">(123) 456‑7890</a></p>
+        <div class="contact-container">
+          <h2>Let's Work Together</h2>
+          <p class="section-subtitle">Ready to start your transformation?</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <h3>Email</h3>
+              <a href="mailto:jordan@example.com">jordan@example.com</a>
+            </div>
+            <div class="contact-method">
+              <h3>Phone</h3>
+              <a href="tel:+14155552671">(415) 555-2671</a>
+            </div>
+          </div>
+          
+          <a href="mailto:jordan@example.com" class="btn btn-secondary">Send Me a Message</a>
+        </div>
       </section>
     </main>
 
+    <footer class="footer">
+      <p>&copy; 2024 Jordan. Personal Training.</p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jordan Terry | Personal Trainer</title>
-  <meta name="description" content="Jordan Terry offers personal training, strength coaching, and one-on-one fitness support in Kansas City." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#home">Jordan Terry</a>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#more">More</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="btn btn-primary" href="#contact">Book a Consult</a>
-    </div>
-  </header>
-
-  <main>
-    <section id="home" class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Your Next Step</span>
-          <h1>Personal training that fits your goals, schedule, and life.</h1>
-          <p>Hi, I’m Jordan. I’m a Kansas City native and recent BYU grad with over a decade of fitness experience. My training helps you feel stronger, move better, and build confidence for every day.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Book a Free Consult</a>
-            <a class="btn btn-secondary" href="#pricing">View Session Structure</a>
-          </div>
-        </div>
-        <div class="hero-panel">
-          <div class="hero-image-placeholder">
-            <span>Picture goes here</span>
-          </div>
-          <div class="hero-contact-box">
-            <p>Book with me here</p>
-            <p><strong>Phone:</strong> 816-730-2649</p>
-            <p><strong>Email:</strong> jordanterry.training@gmail.com</p>
-            <p><strong>Instagram:</strong> @Jordanterry100</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="more" class="section-light">
-      <div class="container">
-        <span class="section-label">More from your trainer</span>
-        <h2>I am here for you.</h2>
-        <p>I want all of my clients to have the ability to confidently work out on their own with the knowledge and experience gained from training sessions with me. Now, if you’d rather have a trainer all the time, that’s totally fine.</p>
-        <div class="trainer-grid">
-          <div class="trainer-card">
-            <h3>Personalized support</h3>
-            <p>I help you build strength, feel better, and move with confidence through customized coaching.</p>
-          </div>
-          <div class="trainer-card">
-            <h3>Comfort & safety</h3>
-            <p>I’m all about making people feel comfortable and safe, especially if the gym is a new environment for you.</p>
-          </div>
-          <div class="trainer-card">
-            <h3>Results-focused</h3>
-            <p>I want people to see and feel results. That in itself doesn’t come easily, so I’ll be your perfect balance of happy headspace and pushing it to the limit.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="pricing" class="section-dark">
-      <div class="container">
-        <span class="section-label section-label-light">Session Structure</span>
-        <h2>Pricing and how it works.</h2>
-        <div class="service-grid">
-          <article class="plan-card">
-            <h3>30-minute session</h3>
-            <p>$30</p>
-            <p>Quick, focused training for technique, strength, and consistency.</p>
-          </article>
-          <article class="plan-card featured">
-            <h3>60-minute session</h3>
-            <p>$50</p>
-            <p>Full session including warm-up, training, and recovery guidance.</p>
-          </article>
-          <article class="plan-card">
-            <h3>Weekly value</h3>
-            <p>$40/hour or $25/half hour</p>
-            <p>Discounted rates for 3+ sessions per week.</p>
-          </article>
-        </div>
-        <div class="pricing-note">
-          <p>Free consultation. Let’s get started.</p>
-          <p>Session cost (2 or fewer sessions a week). Come get a free first workout and sit down with me.</p>
-          <p>Discounted rates for the new year.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section-cta">
-      <div class="container contact-grid">
-        <div>
-          <span class="section-label">Contact</span>
-          <h2>Let’s set up your first session.</h2>
-          <p>Call, text, email, or send me a message below. I’ll respond quickly and help you schedule a session.</p>
-          <div class="contact-cards">
-            <div class="contact-card">
-              <strong>Phone</strong>
-              <a href="tel:8167302649">816-730-2649</a>
-            </div>
-            <div class="contact-card">
-              <strong>Email</strong>
-              <a href="mailto:jordanterry.training@gmail.com">jordanterry.training@gmail.com</a>
-            </div>
-            <div class="contact-card">
-              <strong>Instagram</strong>
-              <a href="https://instagram.com/Jordanterry100" target="_blank" rel="noreferrer">Jordanterry100</a>
-            </div>
-          </div>
-        </div>
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" placeholder="Your name" />
-          </label>
-          <label>
-            Email
-            <input type="email" placeholder="you@example.com" />
-          </label>
-          <label>
-            Message
-            <textarea placeholder="Tell me about your goals"></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 Jordan Terry Training. Built for real results.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
 </html>
