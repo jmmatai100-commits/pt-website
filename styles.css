@@ -45,10 +45,24 @@ html, body {
 }
 
 .nav-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.brand-name {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--primary-dark);
+}
+
+.brand-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
 }
 
 .nav-links {
