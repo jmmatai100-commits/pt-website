@@ -385,6 +385,119 @@ html, body {
   font-size: 0.95rem;
 }
 
+/* Pricing Section */
+.pricing {
+  padding: 80px 20px;
+  background: var(--bg-white);
+}
+
+.pricing-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pricing-container > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--warm-brown);
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.pricing-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.pricing-item h3 {
+  font-size: 1.2rem;
+  color: var(--warm-brown);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.pricing-item p {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.pricing-category {
+  background: var(--bg-light);
+  padding: 28px;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary);
+}
+
+.pricing-category h3 {
+  font-size: 1.4rem;
+  color: var(--warm-brown);
+  margin-bottom: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pricing-section {
+  margin-bottom: 20px;
+}
+
+.pricing-section h4 {
+  font-size: 1.05rem;
+  color: var(--text);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.pricing-section p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pricing-list li {
+  color: var(--text);
+  font-size: 0.95rem;
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.pricing-list li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.pricing-note {
+  background: var(--bg-white);
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.pricing-note p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.pricing-note p:last-child {
+  margin-bottom: 0;
+}
+
 /* Contact Section */
 .contact {
   padding: 100px 20px;
