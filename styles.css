@@ -565,11 +565,6 @@ html, body {
   font-size: 1.05rem;
 }
 
-.gym-text strong {
-  color: var(--warm-brown);
-  font-size: 1.16rem;
-}
-
 .gym-media {
   margin-top: 54px;
 }
