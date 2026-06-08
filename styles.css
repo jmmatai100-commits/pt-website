@@ -497,7 +497,7 @@ html, body {
 }
 
 .pricing-note p {
-  color: var(--text-light);
+  color: var(--text);
   font-size: 0.95rem;
   line-height: 1.7;
   margin-bottom: 16px;
@@ -505,6 +505,92 @@ html, body {
 
 .pricing-note p:last-child {
   margin-bottom: 0;
+}
+/* Training Room Section */
+.gym {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #fffaf6 0%, #fef9f3 100%);
+}
+
+.gym-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gym-container > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.25rem;
+  color: var(--warm-brown);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.gym-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.gym-logo {
+  width: 96px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.gym-title {
+  text-align: center;
+}
+
+.gym-location {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+.gym-lead {
+  text-align: center;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.gym-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+.gym-text p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.gym-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gym-features li {
+  background: var(--bg-white);
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  color: var(--text);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .gym-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Contact Section */
