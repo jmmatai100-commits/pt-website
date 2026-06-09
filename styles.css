@@ -483,7 +483,9 @@ html, body {
   background: var(--bg-white);
   padding: 28px;
   border-radius: 12px;
-  border: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
 }
 
 .pricing-note p {
