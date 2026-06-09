@@ -14,7 +14,7 @@
       <div class="nav-container">
         <div class="nav-brand">
           <span class="brand-name">Jordan Terry</span>
-          <span class="brand-title">Certified Personal Trainer</span>
+          <button class="brand-title cert-trigger" type="button" data-cert-open>Certified Personal Trainer</button>
         </div>
         <div class="nav-links">
           <a href="#about">About</a>
@@ -220,6 +220,18 @@
         </div>
       </section>
     </main>
+
+    <div class="cert-modal" id="cert-modal" aria-hidden="true">
+      <div class="cert-modal-backdrop" data-cert-close></div>
+      <div class="cert-modal-panel" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+        <div class="cert-modal-header">
+          <h2 id="cert-modal-title">NASM Certification</h2>
+          <button class="cert-modal-close" type="button" aria-label="Close certification" data-cert-close>&times;</button>
+        </div>
+        <iframe class="cert-frame" src="assets/nasm-certification.pdf" title="Jordan Terry NASM certification"></iframe>
+        <a class="cert-download" href="assets/nasm-certification.pdf" target="_blank" rel="noopener">Open certificate in a new tab</a>
+      </div>
+    </div>
 
     <footer class="footer">
       <p>&copy; 2024 Jordan. Personal Training.</p>

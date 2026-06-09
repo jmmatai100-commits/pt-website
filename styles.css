@@ -65,6 +65,24 @@ html, body {
   letter-spacing: 0.6px;
 }
 
+.cert-trigger {
+  appearance: none;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.cert-trigger:hover,
+.cert-trigger:focus-visible {
+  border-color: currentColor;
+  color: var(--primary-dark);
+  outline: none;
+}
+
 .nav-links {
   display: flex;
   gap: 32px;
@@ -764,6 +782,94 @@ html, body {
   font-size: 0.9rem;
 }
 
+.cert-modal {
+  align-items: center;
+  display: none;
+  inset: 0;
+  justify-content: center;
+  padding: 24px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.cert-modal.is-open {
+  display: flex;
+}
+
+.cert-modal-backdrop {
+  background: rgba(17, 24, 39, 0.72);
+  inset: 0;
+  position: absolute;
+}
+
+.cert-modal-panel {
+  background: var(--bg-white);
+  border-radius: 12px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+  max-height: 92vh;
+  max-width: 900px;
+  overflow: hidden;
+  position: relative;
+  width: min(100%, 900px);
+  z-index: 1;
+}
+
+.cert-modal-header {
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+}
+
+.cert-modal-header h2 {
+  color: var(--warm-brown);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.cert-modal-close {
+  align-items: center;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.5rem;
+  height: 36px;
+  justify-content: center;
+  line-height: 1;
+  width: 36px;
+}
+
+.cert-modal-close:hover,
+.cert-modal-close:focus-visible {
+  background: var(--primary);
+  color: white;
+  outline: none;
+}
+
+.cert-frame {
+  border: 0;
+  display: block;
+  height: min(74vh, 760px);
+  width: 100%;
+}
+
+.cert-download {
+  border-top: 1px solid var(--border);
+  color: var(--primary);
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 12px 18px;
+  text-align: center;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-container {
@@ -976,5 +1082,21 @@ html, body {
   .contact-method a {
     font-size: 1rem;
     overflow-wrap: anywhere;
+  }
+
+  .cert-modal {
+    padding: 14px;
+  }
+
+  .cert-modal-header {
+    padding: 12px 14px;
+  }
+
+  .cert-modal-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .cert-frame {
+    height: 68vh;
   }
 }

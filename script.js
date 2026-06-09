@@ -9,3 +9,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+const certModal = document.getElementById('cert-modal');
+const certOpenButton = document.querySelector('[data-cert-open]');
+const certCloseButtons = document.querySelectorAll('[data-cert-close]');
+
+function openCertModal() {
+  if (!certModal) return;
+  certModal.classList.add('is-open');
+  certModal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCertModal() {
+  if (!certModal) return;
+  certModal.classList.remove('is-open');
+  certModal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  certOpenButton?.focus();
+}
+
+certOpenButton?.addEventListener('click', openCertModal);
+
+certCloseButtons.forEach(button => {
+  button.addEventListener('click', closeCertModal);
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && certModal?.classList.contains('is-open')) {
+    closeCertModal();
+  }
+});
