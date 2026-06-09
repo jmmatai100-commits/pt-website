@@ -805,3 +805,174 @@ html, body {
     font-size: 2rem;
   }
 }
+
+/* Mobile polish */
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: static;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    text-align: center;
+  }
+
+  .nav-brand {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .brand-name {
+    font-size: 1.25rem;
+  }
+
+  .brand-title {
+    font-size: 0.7rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 10px 16px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 0.84rem;
+    line-height: 1.2;
+  }
+
+  .hero,
+  .philosophy,
+  .focus,
+  .pricing,
+  .gym,
+  .contact {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    min-height: auto;
+  }
+
+  .hero-container {
+    gap: 28px;
+  }
+
+  .hero-content h1,
+  .philosophy-container > h2,
+  .focus-container > h2,
+  .pricing-container > h2,
+  .contact-container h2 {
+    font-size: 1.9rem;
+    line-height: 1.15;
+  }
+
+  .hero-subtitle,
+  .section-subtitle,
+  .contact-note {
+    font-size: 1rem;
+  }
+
+  .hero-description,
+  .philosophy-card p,
+  .focus-card p,
+  .pricing-section p,
+  .pricing-list li,
+  .pricing-note p,
+  .gym-text p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .philosophy,
+  .focus,
+  .pricing,
+  .gym,
+  .contact {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .philosophy-card,
+  .pricing-category,
+  .pricing-note {
+    padding: 24px 20px;
+  }
+
+  .gym-heading-row {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .gym-heading-row h2 {
+    font-size: 2.45rem;
+    line-height: 1.08;
+    text-align: center;
+  }
+
+  .gym-logo {
+    width: 104px;
+    margin-left: 0;
+  }
+
+  .gym-location {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .gym-media {
+    margin-top: 26px;
+    max-width: 100%;
+  }
+
+  .gym-media h3 {
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+  }
+
+  .weights-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .weights-video video {
+    min-height: 240px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .weights-images {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .weights-images img,
+  .turf-grid img {
+    width: 100%;
+    height: auto;
+  }
+
+  .turf-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-method a {
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
+}
