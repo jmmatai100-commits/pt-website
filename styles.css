@@ -585,6 +585,15 @@ html, body {
   font-size: 1.05rem;
 }
 
+.gym-copy-primary,
+.gym-copy-secondary {
+  display: inline;
+}
+
+.gym-copy-primary::after {
+  content: ' ';
+}
+
 .gym-media {
   max-width: 1040px;
   margin: 30px auto 0;
@@ -1001,6 +1010,19 @@ html, body {
   .gym-text p {
     font-size: 0.95rem;
     line-height: 1.7;
+  }
+
+  .gym-copy-primary,
+  .gym-copy-secondary {
+    display: block;
+  }
+
+  .gym-copy-primary {
+    margin-bottom: 14px;
+  }
+
+  .gym-copy-primary::after {
+    content: '';
   }
 
   .philosophy,
