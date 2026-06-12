@@ -69,38 +69,58 @@ html, body {
   appearance: none;
   background: none;
   border: 0;
-  border-bottom: 1px solid transparent;
   cursor: pointer;
   font-family: inherit;
-  padding: 0;
-  transition: border-color 0.3s ease, color 0.3s ease;
+  padding: 0 0 7px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.cert-trigger::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 78%;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 999px;
+  transform: translateX(-50%);
+  opacity: 0.75;
 }
 
 .cert-trigger:hover,
 .cert-trigger:focus-visible {
-  border-color: currentColor;
   color: var(--primary-dark);
   outline: none;
 }
 
 .nav-links {
   display: flex;
-  gap: 32px;
+  gap: 12px;
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
 .nav-links a {
+  border: 1px solid rgba(31, 41, 55, 0.18);
+  border-radius: 8px;
   text-decoration: none;
   color: var(--text);
   font-size: 0.95rem;
   font-weight: 500;
-  transition: color 0.3s ease;
+  padding: 8px 14px;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: var(--primary);
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+  outline: none;
+  transform: translateY(-1px);
 }
 
 /* Hero Section */
