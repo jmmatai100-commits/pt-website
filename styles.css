@@ -79,13 +79,12 @@ html, body {
 .cert-trigger::after {
   content: '';
   position: absolute;
-  left: 50%;
+  left: 0;
   bottom: 0;
-  width: 78%;
+  width: 100%;
   height: 2px;
   background: var(--primary);
   border-radius: 999px;
-  transform: translateX(-50%);
   opacity: 0.75;
 }
 
