@@ -224,6 +224,49 @@ html, body {
   background: #5f2d0c;
 }
 
+/* Reviews Section */
+.reviews {
+  padding: 70px 20px;
+  background: linear-gradient(180deg, #fffaf0 0%, var(--bg-light) 100%);
+}
+
+.reviews-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews-container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--warm-brown);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  align-items: start;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: var(--bg-white);
+  border: 1px solid rgba(31, 41, 55, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(31, 41, 55, 0.08);
+  padding: 14px;
+}
+
+.review-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
 /* Philosophy Section */
 .philosophy {
   /* bring this section closer to the About section */
@@ -932,6 +975,10 @@ html, body {
     grid-template-columns: 1fr;
   }
 
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
   .contact-methods {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -986,6 +1033,7 @@ html, body {
   }
 
   .hero,
+  .reviews,
   .philosophy,
   .focus,
   .pricing,
@@ -1006,6 +1054,7 @@ html, body {
   }
 
   .hero-content h1,
+  .reviews-container h2,
   .philosophy-container > h2,
   .focus-container > h2,
   .pricing-container > h2,
@@ -1045,6 +1094,7 @@ html, body {
   }
 
   .philosophy,
+  .reviews,
   .focus,
   .pricing,
   .gym,
