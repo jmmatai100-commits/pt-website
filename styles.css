@@ -248,7 +248,7 @@ html, body {
   grid-template-columns: 1fr;
   gap: 16px;
   align-items: start;
-  max-width: 780px;
+  max-width: 681px;
   margin: 0 auto;
 }
 
