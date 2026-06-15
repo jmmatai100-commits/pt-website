@@ -44,10 +44,11 @@ document.addEventListener('keydown', event => {
 const lightbox = document.getElementById('image-lightbox');
 const lightboxImage = lightbox?.querySelector('img');
 const lightboxCloseButtons = document.querySelectorAll('[data-lightbox-close]');
+const lightboxDesktopQuery = window.matchMedia('(min-width: 769px)');
 let activeLightboxTrigger = null;
 
 function openLightbox(trigger) {
-  if (!lightbox || !lightboxImage) return;
+  if (!lightbox || !lightboxImage || !lightboxDesktopQuery.matches) return;
   activeLightboxTrigger = trigger;
   lightboxImage.src = trigger.dataset.lightboxSrc || '';
   lightboxImage.alt = trigger.dataset.lightboxAlt || '';
@@ -68,6 +69,12 @@ function closeLightbox() {
 
 document.querySelectorAll('[data-lightbox-src]').forEach(trigger => {
   trigger.addEventListener('click', () => openLightbox(trigger));
+});
+
+lightboxDesktopQuery.addEventListener('change', event => {
+  if (!event.matches && lightbox?.classList.contains('is-open')) {
+    closeLightbox();
+  }
 });
 
 lightboxCloseButtons.forEach(button => {
