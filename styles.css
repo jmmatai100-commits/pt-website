@@ -946,7 +946,6 @@ html, body {
   background: var(--primary);
   border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 50%;
-  bottom: 22px;
   box-shadow: 0 12px 28px rgba(31, 41, 55, 0.22);
   color: white;
   cursor: pointer;
@@ -960,7 +959,8 @@ html, body {
   pointer-events: none;
   position: fixed;
   right: 22px;
-  transform: translateY(10px);
+  top: 50%;
+  transform: translateY(calc(-50% + 10px));
   transition: opacity 0.25s ease, transform 0.25s ease, background 0.25s ease;
   width: 42px;
   z-index: 90;
@@ -969,14 +969,14 @@ html, body {
 .back-to-top.is-visible {
   opacity: 1;
   pointer-events: auto;
-  transform: translateY(0);
+  transform: translateY(-50%);
 }
 
 .back-to-top:hover,
 .back-to-top:focus-visible {
   background: var(--primary-dark);
   outline: none;
-  transform: translateY(-2px);
+  transform: translateY(calc(-50% - 2px));
 }
 
 /* Responsive */
@@ -1230,7 +1230,6 @@ html, body {
   }
 
   .back-to-top {
-    bottom: 16px;
     height: 38px;
     right: 16px;
     width: 38px;
