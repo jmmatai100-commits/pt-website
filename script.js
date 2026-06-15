@@ -40,3 +40,17 @@ document.addEventListener('keydown', event => {
     closeCertModal();
   }
 });
+
+const backToTopButton = document.querySelector('.back-to-top');
+
+function updateBackToTopButton() {
+  if (!backToTopButton) return;
+  backToTopButton.classList.toggle('is-visible', window.scrollY > 360);
+}
+
+backToTopButton?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+window.addEventListener('scroll', updateBackToTopButton, { passive: true });
+updateBackToTopButton();
