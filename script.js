@@ -41,6 +41,45 @@ document.addEventListener('keydown', event => {
   }
 });
 
+const lightbox = document.getElementById('image-lightbox');
+const lightboxImage = lightbox?.querySelector('img');
+const lightboxCloseButtons = document.querySelectorAll('[data-lightbox-close]');
+let activeLightboxTrigger = null;
+
+function openLightbox(trigger) {
+  if (!lightbox || !lightboxImage) return;
+  activeLightboxTrigger = trigger;
+  lightboxImage.src = trigger.dataset.lightboxSrc || '';
+  lightboxImage.alt = trigger.dataset.lightboxAlt || '';
+  lightbox.classList.add('is-open');
+  lightbox.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  if (!lightbox || !lightboxImage) return;
+  lightbox.classList.remove('is-open');
+  lightbox.setAttribute('aria-hidden', 'true');
+  lightboxImage.src = '';
+  lightboxImage.alt = '';
+  document.body.style.overflow = '';
+  activeLightboxTrigger?.focus();
+}
+
+document.querySelectorAll('[data-lightbox-src]').forEach(trigger => {
+  trigger.addEventListener('click', () => openLightbox(trigger));
+});
+
+lightboxCloseButtons.forEach(button => {
+  button.addEventListener('click', closeLightbox);
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && lightbox?.classList.contains('is-open')) {
+    closeLightbox();
+  }
+});
+
 const backToTopButton = document.querySelector('.back-to-top');
 
 function updateBackToTopButton() {

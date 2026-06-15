@@ -679,7 +679,7 @@ html, body {
 
 .weights-video,
 .weights-images img,
-.turf-grid img {
+.turf-photo-button {
   overflow: hidden;
   border-radius: 14px;
   background: var(--bg-white);
@@ -711,6 +711,20 @@ html, body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+}
+
+.turf-photo-button {
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.turf-photo-button:hover,
+.turf-photo-button:focus-visible {
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16);
+  outline: none;
+  transform: translateY(-3px);
 }
 
 .turf-grid img {
@@ -939,6 +953,71 @@ html, body {
   font-weight: 600;
   padding: 12px 18px;
   text-align: center;
+}
+
+.image-lightbox {
+  align-items: center;
+  display: none;
+  inset: 0;
+  justify-content: center;
+  padding: 24px;
+  position: fixed;
+  z-index: 1100;
+}
+
+.image-lightbox.is-open {
+  display: flex;
+}
+
+.image-lightbox-backdrop {
+  background: rgba(17, 24, 39, 0.78);
+  border: 0;
+  cursor: pointer;
+  inset: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.image-lightbox-panel {
+  max-height: 88vh;
+  max-width: min(1040px, 92vw);
+  position: relative;
+  z-index: 1;
+}
+
+.image-lightbox-panel img {
+  background: var(--bg-white);
+  border-radius: 12px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+  display: block;
+  max-height: 88vh;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.image-lightbox-close {
+  align-items: center;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.45rem;
+  height: 38px;
+  justify-content: center;
+  line-height: 1;
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  width: 38px;
+}
+
+.image-lightbox-close:hover,
+.image-lightbox-close:focus-visible {
+  background: var(--primary);
+  color: white;
+  outline: none;
 }
 
 .back-to-top {
