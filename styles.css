@@ -681,20 +681,20 @@ html, body {
     url('assets/tr-logo.png'),
     url('assets/tr-logo.png');
   background-position:
-    calc(50% - 772px) 36px,
-    calc(50% + 688px) 146px,
-    calc(50% - 772px) 256px,
-    calc(50% + 688px) 366px,
-    calc(50% - 772px) 476px,
-    calc(50% + 688px) 586px,
-    calc(50% - 772px) 696px,
-    calc(50% + 688px) 806px,
-    calc(50% - 772px) 916px,
-    calc(50% + 688px) 1026px,
-    calc(50% - 772px) 1136px,
-    calc(50% + 688px) 1246px,
-    calc(50% - 772px) 1356px,
-    calc(50% + 688px) 1466px;
+    calc(50% - 748px) 36px,
+    calc(50% + 712px) 146px,
+    calc(50% - 748px) 256px,
+    calc(50% + 712px) 366px,
+    calc(50% - 748px) 476px,
+    calc(50% + 712px) 586px,
+    calc(50% - 748px) 696px,
+    calc(50% + 712px) 806px,
+    calc(50% - 748px) 916px,
+    calc(50% + 712px) 1026px,
+    calc(50% - 748px) 1136px,
+    calc(50% + 712px) 1246px,
+    calc(50% - 748px) 1356px,
+    calc(50% + 712px) 1466px;
   background-repeat: no-repeat;
   background-size: 120px 120px;
   content: '';
@@ -817,20 +817,20 @@ html, body {
 
   .gym-media::before {
     background-position:
-      calc(50% - 471px) 40px,
-      calc(50% + 421px) 150px,
-      calc(50% - 471px) 260px,
-      calc(50% + 421px) 370px,
-      calc(50% - 471px) 480px,
-      calc(50% + 421px) 590px,
-      calc(50% - 471px) 700px,
-      calc(50% + 421px) 810px,
-      calc(50% - 471px) 920px,
-      calc(50% + 421px) 1030px,
-      calc(50% - 471px) 1140px,
-      calc(50% + 421px) 1250px,
-      calc(50% - 471px) 1360px,
-      calc(50% + 421px) 1470px;
+      calc(50% - 447px) 40px,
+      calc(50% + 445px) 150px,
+      calc(50% - 447px) 260px,
+      calc(50% + 445px) 370px,
+      calc(50% - 447px) 480px,
+      calc(50% + 445px) 590px,
+      calc(50% - 447px) 700px,
+      calc(50% + 445px) 810px,
+      calc(50% - 447px) 920px,
+      calc(50% + 445px) 1030px,
+      calc(50% - 447px) 1140px,
+      calc(50% + 445px) 1250px,
+      calc(50% - 447px) 1360px,
+      calc(50% + 445px) 1470px;
     background-size: 86px 86px;
   }
 }
