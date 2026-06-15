@@ -659,8 +659,8 @@ html, body {
 .gym-media {
   isolation: isolate;
   margin: 30px auto 0;
-  max-width: 1200px;
-  padding: 28px 156px;
+  max-width: 1240px;
+  padding: 28px 168px;
   position: relative;
 }
 
@@ -674,19 +674,25 @@ html, body {
     url('assets/tr-logo.png'),
     url('assets/tr-logo.png'),
     url('assets/tr-logo.png'),
+    url('assets/tr-logo.png'),
+    url('assets/tr-logo.png'),
+    url('assets/tr-logo.png'),
     url('assets/tr-logo.png');
   background-position:
-    left 22px top 36px,
-    right 22px top 146px,
-    left 22px top 256px,
-    right 22px top 366px,
-    left 22px top 476px,
-    right 22px top 586px,
-    left 22px top 696px,
-    right 22px top 806px,
-    left 22px top 916px;
+    left 24px top 36px,
+    right 24px top 146px,
+    left 24px top 256px,
+    right 24px top 366px,
+    left 24px top 476px,
+    right 24px top 586px,
+    left 24px top 696px,
+    right 24px top 806px,
+    left 24px top 916px,
+    right 24px top 1026px,
+    left 24px top 1136px,
+    right 24px top 1246px;
   background-repeat: no-repeat;
-  background-size: 112px 112px;
+  background-size: 120px 120px;
   content: '';
   inset: 0;
   pointer-events: none;
@@ -790,22 +796,25 @@ html, body {
   }
 
   .gym-media {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 116px;
+    padding-right: 116px;
   }
 
   .gym-media::before {
     background-position:
-      left 14px top 40px,
-      right 14px top 150px,
-      left 14px top 260px,
-      right 14px top 370px,
-      left 14px top 480px,
-      right 14px top 590px,
-      left 14px top 700px,
-      right 14px top 810px,
-      left 14px top 920px;
-    background-size: 82px 82px;
+      left 15px top 40px,
+      right 15px top 150px,
+      left 15px top 260px,
+      right 15px top 370px,
+      left 15px top 480px,
+      right 15px top 590px,
+      left 15px top 700px,
+      right 15px top 810px,
+      left 15px top 920px,
+      right 15px top 1030px,
+      left 15px top 1140px,
+      right 15px top 1250px;
+    background-size: 86px 86px;
   }
 }
 
