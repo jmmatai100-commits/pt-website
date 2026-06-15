@@ -659,8 +659,8 @@ html, body {
 .gym-media {
   isolation: isolate;
   margin: 30px auto 0;
-  max-width: 1240px;
-  padding: 28px 220px;
+  max-width: 1040px;
+  padding: 28px 0;
   position: relative;
 }
 
@@ -678,24 +678,35 @@ html, body {
     url('assets/tr-logo.png'),
     url('assets/tr-logo.png');
   background-position:
-    left 50px top 36px,
-    right 50px top 146px,
-    left 50px top 256px,
-    right 50px top 366px,
-    left 50px top 476px,
-    right 50px top 586px,
-    left 50px top 696px,
-    right 50px top 806px,
-    left 50px top 916px,
-    right 50px top 1026px,
-    left 50px top 1136px;
+    calc(50% - 790px) 36px,
+    calc(50% + 670px) 146px,
+    calc(50% - 790px) 256px,
+    calc(50% + 670px) 366px,
+    calc(50% - 790px) 476px,
+    calc(50% + 670px) 586px,
+    calc(50% - 790px) 696px,
+    calc(50% + 670px) 806px,
+    calc(50% - 790px) 916px,
+    calc(50% + 670px) 1026px,
+    calc(50% - 790px) 1136px;
   background-repeat: no-repeat;
   background-size: 120px 120px;
   content: '';
-  inset: 0;
+  bottom: 0;
+  left: 50%;
   pointer-events: none;
   position: absolute;
-  z-index: -1;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100vw;
+  z-index: 0;
+}
+
+.gym-media h3,
+.weights-grid,
+.turf-grid {
+  position: relative;
+  z-index: 1;
 }
 
 .gym-media h3 {
@@ -794,23 +805,23 @@ html, body {
   }
 
   .gym-media {
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .gym-media::before {
     background-position:
-      left 27px top 40px,
-      right 27px top 150px,
-      left 27px top 260px,
-      right 27px top 370px,
-      left 27px top 480px,
-      right 27px top 590px,
-      left 27px top 700px,
-      right 27px top 810px,
-      left 27px top 920px,
-      right 27px top 1030px,
-      left 27px top 1140px;
+      calc(50% - 489px) 40px,
+      calc(50% + 403px) 150px,
+      calc(50% - 489px) 260px,
+      calc(50% + 403px) 370px,
+      calc(50% - 489px) 480px,
+      calc(50% + 403px) 590px,
+      calc(50% - 489px) 700px,
+      calc(50% + 403px) 810px,
+      calc(50% - 489px) 920px,
+      calc(50% + 403px) 1030px,
+      calc(50% - 489px) 1140px;
     background-size: 86px 86px;
   }
 }
