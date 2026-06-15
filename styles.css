@@ -659,8 +659,8 @@ html, body {
 .gym-media {
   isolation: isolate;
   margin: 30px auto 0;
-  max-width: 1180px;
-  padding: 28px 112px;
+  max-width: 1200px;
+  padding: 28px 156px;
   position: relative;
 }
 
@@ -671,16 +671,22 @@ html, body {
     url('assets/tr-logo.png'),
     url('assets/tr-logo.png'),
     url('assets/tr-logo.png'),
+    url('assets/tr-logo.png'),
+    url('assets/tr-logo.png'),
+    url('assets/tr-logo.png'),
     url('assets/tr-logo.png');
   background-position:
-    left 8px top 40px,
-    right 8px top 150px,
-    left 8px top 260px,
-    right 8px top 370px,
-    left 8px top 480px,
-    right 8px top 590px;
+    left 22px top 36px,
+    right 22px top 146px,
+    left 22px top 256px,
+    right 22px top 366px,
+    left 22px top 476px,
+    right 22px top 586px,
+    left 22px top 696px,
+    right 22px top 806px,
+    left 22px top 916px;
   background-repeat: no-repeat;
-  background-size: 92px 92px;
+  background-size: 112px 112px;
   content: '';
   inset: 0;
   pointer-events: none;
@@ -784,19 +790,22 @@ html, body {
   }
 
   .gym-media {
-    padding-left: 82px;
-    padding-right: 82px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 
   .gym-media::before {
     background-position:
-      left 6px top 40px,
-      right 6px top 150px,
-      left 6px top 260px,
-      right 6px top 370px,
-      left 6px top 480px,
-      right 6px top 590px;
-    background-size: 68px 68px;
+      left 14px top 40px,
+      right 14px top 150px,
+      left 14px top 260px,
+      right 14px top 370px,
+      left 14px top 480px,
+      right 14px top 590px,
+      left 14px top 700px,
+      right 14px top 810px,
+      left 14px top 920px;
+    background-size: 82px 82px;
   }
 }
 
