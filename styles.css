@@ -481,7 +481,16 @@ html, body {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   font-weight: 700;
+  margin: 0 auto 12px;
+  text-align: center;
+}
+
+.pricing-subtitle {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.6;
   margin: 0 auto 48px;
+  max-width: 620px;
   text-align: center;
 }
 
