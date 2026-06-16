@@ -476,10 +476,14 @@ html, body {
 }
 
 .pricing-container > h2 {
+  background: var(--primary-dark);
+  border-radius: 8px;
+  color: #dc2626;
+  display: block;
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  color: var(--warm-brown);
+  font-size: 3rem;
   margin-bottom: 48px;
+  padding: 16px 22px;
   text-align: center;
 }
 
@@ -509,10 +513,14 @@ html, body {
 }
 
 .pricing-category h3 {
-  font-size: 1.4rem;
-  color: var(--warm-brown);
+  background: var(--primary-dark);
+  border-radius: 8px;
+  color: #dc2626;
+  display: inline-block;
+  font-size: 1.55rem;
   margin-bottom: 24px;
   font-weight: 700;
+  padding: 10px 16px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -1283,6 +1291,11 @@ html, body {
   .section-subtitle,
   .contact-note {
     font-size: 1rem;
+  }
+
+  .pricing-category h3 {
+    font-size: 1.15rem;
+    max-width: 100%;
   }
 
   .hero-description,
