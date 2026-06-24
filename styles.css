@@ -512,10 +512,14 @@ html, body {
   font-size: 1rem;
 }
 
+.pricing-item {
+  padding-left: 32px;
+}
+
 .pricing-category {
   background: var(--bg-light);
   padding: 28px;
-  border-radius: 12px;
+  border-radius: 0;
   border-left: 4px solid var(--primary);
 }
 
