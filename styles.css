@@ -936,11 +936,13 @@ html, body {
 }
 
 .contact-note {
-  font-size: 1.45rem;
+  font-size: 0.9rem;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
   color: var(--text);
   margin-top: 32px;
-  line-height: 1.35;
+  line-height: 1.5;
 }
 
 .form-link {
@@ -1317,7 +1319,7 @@ html, body {
   .hero-subtitle,
   .section-subtitle,
   .contact-note {
-    font-size: 1.08rem;
+    font-size: 0.9rem;
   }
 
   .pricing-category h3 {
