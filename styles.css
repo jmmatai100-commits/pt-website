@@ -122,6 +122,19 @@ html, body {
   transform: translateY(-1px);
 }
 
+.nav-links .nav-cta {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+  font-weight: 700;
+}
+
+.nav-links .nav-cta:hover,
+.nav-links .nav-cta:focus-visible {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
 /* Hero Section */
 .hero {
   padding: 80px 20px;
@@ -923,10 +936,11 @@ html, body {
 }
 
 .contact-note {
-  font-size: 1.1rem;
+  font-size: 1.45rem;
+  font-weight: 700;
   color: var(--text);
   margin-top: 32px;
-  line-height: 1.6;
+  line-height: 1.35;
 }
 
 .form-link {
@@ -1264,6 +1278,11 @@ html, body {
     line-height: 1.2;
   }
 
+  .nav-links .nav-cta {
+    flex-basis: 100%;
+    max-width: 340px;
+  }
+
   .hero,
   .reviews,
   .philosophy,
@@ -1298,7 +1317,7 @@ html, body {
   .hero-subtitle,
   .section-subtitle,
   .contact-note {
-    font-size: 1rem;
+    font-size: 1.08rem;
   }
 
   .pricing-category h3 {
