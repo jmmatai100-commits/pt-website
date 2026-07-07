@@ -938,7 +938,6 @@ html, body {
 .contact-note {
   font-size: 0.9rem;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 0.8px;
   color: var(--text);
   margin-top: 32px;
