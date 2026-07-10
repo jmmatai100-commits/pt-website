@@ -949,12 +949,76 @@ html, body {
 
 .pricing-category h3 {
   color: var(--primary-dark);
-  display: inline-block;
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
   font-size: 1.55rem;
   margin-bottom: 24px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
+}
+
+.pricing-heading-icon {
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 38px;
+}
+
+.pricing-heading-icon span {
+  display: block;
+  position: relative;
+}
+
+.pricing-heading-icon span::before {
+  background: var(--primary);
+  border-radius: 50%;
+  content: '';
+  height: 8px;
+  left: 50%;
+  position: absolute;
+  top: 7px;
+  transform: translateX(-50%);
+  width: 8px;
+}
+
+.pricing-heading-icon span::after {
+  background: var(--primary);
+  border-radius: 8px 8px 3px 3px;
+  content: '';
+  height: 10px;
+  left: 50%;
+  position: absolute;
+  top: 17px;
+  transform: translateX(-50%);
+  width: 13px;
+}
+
+.single-person-icon span {
+  height: 100%;
+  width: 20px;
+}
+
+.couple-person-icon {
+  width: 48px;
+}
+
+.couple-person-icon span {
+  height: 100%;
+  width: 18px;
+}
+
+.couple-person-icon span:first-child {
+  margin-right: -2px;
+}
+
+.couple-person-icon span:last-child {
+  margin-left: -2px;
 }
 
 .pricing-section {
@@ -1820,6 +1884,15 @@ html, body {
   .pricing-category h3 {
     font-size: 1.15rem;
     max-width: 100%;
+  }
+
+  .pricing-heading-icon {
+    height: 28px;
+    width: 34px;
+  }
+
+  .couple-person-icon {
+    width: 42px;
   }
 
   .hero-description,
