@@ -323,19 +323,49 @@ html, body {
 }
 
 .trainer-heart {
-  display: inline-flex;
-  vertical-align: middle;
-  margin-left: 10px;
-  width: 34px;
-  height: 34px;
   align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+  animation: trainer-heartbeat 1.45s ease-in-out infinite;
   background: linear-gradient(135deg, #b45309, #f59e0b);
+  border-radius: 50%;
   color: white;
-  box-shadow: 0 8px 20px rgba(217, 119, 6, 0.2);
+  display: inline-flex;
   font-size: 1.05rem;
+  height: 34px;
+  justify-content: center;
   line-height: 1;
+  margin-left: 10px;
+  box-shadow: 0 8px 20px rgba(217, 119, 6, 0.2);
+  transform-origin: center;
+  vertical-align: middle;
+  width: 34px;
+  will-change: transform;
+}
+
+@keyframes trainer-heartbeat {
+  0%,
+  42%,
+  70%,
+  100% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.14);
+  }
+
+  28% {
+    transform: scale(0.96);
+  }
+
+  56% {
+    transform: scale(1.09);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trainer-heart {
+    animation: none;
+  }
 }
 
 .section-subtitle {
