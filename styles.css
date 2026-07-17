@@ -531,8 +531,8 @@ html, body {
 
 .youth-hero-container {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.86fr);
-  gap: 52px;
+  grid-template-columns: minmax(0, 0.88fr) minmax(420px, 1.12fr);
+  gap: 46px;
   align-items: center;
 }
 
@@ -568,7 +568,7 @@ html, body {
 }
 
 .youth-hero-media img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 11;
   border-radius: 8px;
   box-shadow: 0 22px 48px rgba(31, 41, 55, 0.14);
   display: block;
@@ -585,25 +585,25 @@ html, body {
   background: rgba(255, 255, 255, 0.94);
   border: 1px solid rgba(31, 41, 55, 0.12);
   border-radius: 8px;
-  bottom: 18px;
-  box-shadow: 0 16px 34px rgba(31, 41, 55, 0.16);
+  bottom: 14px;
+  box-shadow: 0 12px 26px rgba(31, 41, 55, 0.14);
   display: grid;
-  gap: 8px;
+  gap: 6px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  left: 18px;
-  padding: 14px;
+  left: 14px;
+  padding: 10px 11px;
   position: absolute;
-  width: min(250px, calc(100% - 36px));
+  width: min(210px, calc(100% - 28px));
 }
 
 .youth-performance-panel span {
   align-items: center;
   color: var(--primary-dark);
   display: flex;
-  font-size: 0.78rem;
+  font-size: 0.68rem;
   font-weight: 800;
-  gap: 7px;
-  letter-spacing: 0.6px;
+  gap: 6px;
+  letter-spacing: 0.45px;
   text-transform: uppercase;
 }
 
@@ -611,9 +611,9 @@ html, body {
   background: var(--primary);
   border-radius: 50%;
   content: '';
-  flex: 0 0 7px;
-  height: 7px;
-  width: 7px;
+  flex: 0 0 6px;
+  height: 6px;
+  width: 6px;
 }
 
 .youth-section {
@@ -1872,8 +1872,8 @@ html, body {
   .youth-performance-panel {
     bottom: 12px;
     left: 12px;
-    padding: 12px;
-    width: calc(100% - 24px);
+    padding: 10px 11px;
+    width: min(220px, calc(100% - 24px));
   }
 
   .youth-progress {
