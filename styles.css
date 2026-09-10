@@ -1184,11 +1184,11 @@ html, body {
 
 .gym-copy-primary,
 .gym-copy-secondary {
-  display: inline;
+  display: block;
 }
 
-.gym-copy-primary::after {
-  content: ' ';
+.gym-copy-primary {
+  margin-bottom: 14px;
 }
 
 .gym-media {
@@ -1935,19 +1935,6 @@ html, body {
   .gym-text p {
     font-size: 0.95rem;
     line-height: 1.7;
-  }
-
-  .gym-copy-primary,
-  .gym-copy-secondary {
-    display: block;
-  }
-
-  .gym-copy-primary {
-    margin-bottom: 14px;
-  }
-
-  .gym-copy-primary::after {
-    content: '';
   }
 
   .philosophy,
